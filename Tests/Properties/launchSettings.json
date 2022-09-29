@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Tests": {
+      "commandName": "Project",
+      "commandLineArgs": "/mnt/c/Users/Pyrolink/Desktop/cours/Prog/APNEE/Tests/programs/ 5 2 10"
+    },
+		"WSL": {
+			"commandName": "WSL2",
+			"commandLineArgs": "Tests.dll /mnt/c/Users/Pyrolink/Desktop/cours/Prog/APNEE/Tests/programs/ 5 2 10"
+		}
+  }
+}
