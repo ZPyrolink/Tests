@@ -135,10 +135,10 @@ public class ParenthesesGenerator
 
 			switch (randChar)
 			{
-				case '(':
+				case '(' or '[' or '{':
 					stack.Push(randChar);
 					break;
-				case ')':
+				case ')' or ']' or '}':
 					stack.Pop();
 					break;
 			}
@@ -184,10 +184,10 @@ public class ParenthesesGenerator
 
 			switch (randChar)
 			{
-				case '(':
+				case '(' or '[' or '{':
 					stack.Push(randChar);
 					break;
-				case ')':
+				case ')' or ']' or '}':
 					stack.Pop();
 					break;
 			}
@@ -234,10 +234,10 @@ public class ParenthesesGenerator
 
 			switch (randChar)
 			{
-				case '(':
+				case '(' or '[' or '{':
 					stack.Push(randChar);
 					break;
-				case ')':
+				case ')' or ']' or '}':
 					stack.Pop();
 					break;
 			}
@@ -283,10 +283,10 @@ public class ParenthesesGenerator
 
 			switch (randChar)
 			{
-				case '(':
+				case '(' or '[' or '{':
 					stack.Push(randChar);
 					break;
-				case ')':
+				case ')' or ']' or '}':
 					stack.Pop();
 					break;
 			}
