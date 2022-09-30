@@ -11,13 +11,27 @@ for (int i = 0; i < 10; i++)
 	Console.WriteLine();
 
 	Console.WriteLine("Good generation:");
-	Console.WriteLine("Good length = " + generator.Generate(GeneratorMode.Length, true));
-	Console.WriteLine("Good imbrication = " + generator.Generate(GeneratorMode.Imbrication, true));
+	Console.WriteLine("Good simple length = " +
+	                  generator.Generate(GeneratorMode.Length, false, true));
+	Console.WriteLine("Good simple imbrication = " +
+	                  generator.Generate(GeneratorMode.Imbrication, false, true));
+	
+	Console.WriteLine("Good any length = " +
+	                  generator.Generate(GeneratorMode.Length, false, true));
+	Console.WriteLine("Good any imbrication = " + 
+	                  generator.Generate(GeneratorMode.Imbrication, false, true));
 
 	Console.WriteLine();
 	Console.WriteLine("Bad generation");
-	Console.WriteLine("Bad length = " + generator.Generate(GeneratorMode.Length, false));
-	Console.WriteLine("Bad imbrication = " + generator.Generate(GeneratorMode.Imbrication, false));
+	Console.WriteLine("Bad simple length = " +
+	                  generator.Generate(GeneratorMode.Length, true, false));
+	Console.WriteLine("Bad simple imbrication = " +
+	                  generator.Generate(GeneratorMode.Imbrication, true, false));
+	
+	Console.WriteLine("Bad any length = " +
+	                  generator.Generate(GeneratorMode.Length, true, false));
+	Console.WriteLine("Bad any imbrication = " +
+	                  generator.Generate(GeneratorMode.Imbrication, true, false));
 
 	Console.WriteLine($"\n{"".PadLeft(200, '-')}\n");
 }
